@@ -27,6 +27,18 @@
 		6441A64F1808454B00A66B2D /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6441A64E1808454B00A66B2D /* MobileCoreServices.framework */; };
 		6441A6511808455300A66B2D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6441A6501808455300A66B2D /* Security.framework */; };
 		6441A6531808455E00A66B2D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6441A6521808455E00A66B2D /* SystemConfiguration.framework */; };
+		6441A65518084D6500A66B2D /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6441A65418084D6500A66B2D /* Storyboard.storyboard */; };
+		6441A65618084D6500A66B2D /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6441A65418084D6500A66B2D /* Storyboard.storyboard */; };
+		6441A65B180851E500A66B2D /* Venue.m in Sources */ = {isa = PBXBuildFile; fileRef = 6441A65A180851E500A66B2D /* Venue.m */; };
+		6441A65C180851E500A66B2D /* Venue.m in Sources */ = {isa = PBXBuildFile; fileRef = 6441A65A180851E500A66B2D /* Venue.m */; };
+		6441A65F180851E600A66B2D /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 6441A65E180851E600A66B2D /* Location.m */; };
+		6441A660180851E600A66B2D /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 6441A65E180851E600A66B2D /* Location.m */; };
+		6441A663180851E600A66B2D /* Stats.m in Sources */ = {isa = PBXBuildFile; fileRef = 6441A662180851E600A66B2D /* Stats.m */; };
+		6441A664180851E600A66B2D /* Stats.m in Sources */ = {isa = PBXBuildFile; fileRef = 6441A662180851E600A66B2D /* Stats.m */; };
+		6441A6691808522600A66B2D /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6441A6661808522600A66B2D /* MasterViewController.m */; };
+		6441A66A1808522600A66B2D /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6441A6661808522600A66B2D /* MasterViewController.m */; };
+		6441A66B1808522600A66B2D /* VenueCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6441A6681808522600A66B2D /* VenueCell.m */; };
+		6441A66C1808522600A66B2D /* VenueCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6441A6681808522600A66B2D /* VenueCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +110,17 @@
 		6441A64E1808454B00A66B2D /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		6441A6501808455300A66B2D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		6441A6521808455E00A66B2D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		6441A65418084D6500A66B2D /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		6441A659180851E500A66B2D /* Venue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Venue.h; sourceTree = "<group>"; };
+		6441A65A180851E500A66B2D /* Venue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Venue.m; sourceTree = "<group>"; };
+		6441A65D180851E600A66B2D /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
+		6441A65E180851E600A66B2D /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
+		6441A661180851E600A66B2D /* Stats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stats.h; sourceTree = "<group>"; };
+		6441A662180851E600A66B2D /* Stats.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stats.m; sourceTree = "<group>"; };
+		6441A6651808522600A66B2D /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		6441A6661808522600A66B2D /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		6441A6671808522600A66B2D /* VenueCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VenueCell.h; sourceTree = "<group>"; };
+		6441A6681808522600A66B2D /* VenueCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VenueCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,7 +196,9 @@
 				6441A6161808430F00A66B2D /* AppDelegate.h */,
 				6441A6171808430F00A66B2D /* AppDelegate.m */,
 				6441A61C1808430F00A66B2D /* Images.xcassets */,
-				6441A6191808430F00A66B2D /* CoffeeShopCoreData.xcdatamodeld */,
+				6441A65818084D9800A66B2D /* Modello */,
+				6441A65718084D8500A66B2D /* Viste */,
+				6441A66D1808522B00A66B2D /* Controllori */,
 				6441A60E1808430F00A66B2D /* Supporting Files */,
 			);
 			path = CoffeeShopCoreData;
@@ -217,6 +242,39 @@
 				6441A648180844BE00A66B2D /* RestKitFrameworkTests.octest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		6441A65718084D8500A66B2D /* Viste */ = {
+			isa = PBXGroup;
+			children = (
+				6441A65418084D6500A66B2D /* Storyboard.storyboard */,
+			);
+			name = Viste;
+			sourceTree = "<group>";
+		};
+		6441A65818084D9800A66B2D /* Modello */ = {
+			isa = PBXGroup;
+			children = (
+				6441A6191808430F00A66B2D /* CoffeeShopCoreData.xcdatamodeld */,
+				6441A661180851E600A66B2D /* Stats.h */,
+				6441A662180851E600A66B2D /* Stats.m */,
+				6441A65D180851E600A66B2D /* Location.h */,
+				6441A65E180851E600A66B2D /* Location.m */,
+				6441A659180851E500A66B2D /* Venue.h */,
+				6441A65A180851E500A66B2D /* Venue.m */,
+			);
+			name = Modello;
+			sourceTree = "<group>";
+		};
+		6441A66D1808522B00A66B2D /* Controllori */ = {
+			isa = PBXGroup;
+			children = (
+				6441A6651808522600A66B2D /* MasterViewController.h */,
+				6441A6661808522600A66B2D /* MasterViewController.m */,
+				6441A6671808522600A66B2D /* VenueCell.h */,
+				6441A6681808522600A66B2D /* VenueCell.m */,
+			);
+			name = Controllori;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,6 +392,7 @@
 			files = (
 				6441A6121808430F00A66B2D /* InfoPlist.strings in Resources */,
 				6441A61D1808430F00A66B2D /* Images.xcassets in Resources */,
+				6441A65518084D6500A66B2D /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +401,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6441A62F1808430F00A66B2D /* InfoPlist.strings in Resources */,
+				6441A65618084D6500A66B2D /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,8 +413,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6441A6181808430F00A66B2D /* AppDelegate.m in Sources */,
+				6441A66B1808522600A66B2D /* VenueCell.m in Sources */,
+				6441A65F180851E600A66B2D /* Location.m in Sources */,
+				6441A65B180851E500A66B2D /* Venue.m in Sources */,
+				6441A663180851E600A66B2D /* Stats.m in Sources */,
 				6441A6141808430F00A66B2D /* main.m in Sources */,
 				6441A61B1808430F00A66B2D /* CoffeeShopCoreData.xcdatamodeld in Sources */,
+				6441A6691808522600A66B2D /* MasterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +428,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				6441A6311808430F00A66B2D /* CoffeeShopCoreDataTests.m in Sources */,
+				6441A66C1808522600A66B2D /* VenueCell.m in Sources */,
+				6441A664180851E600A66B2D /* Stats.m in Sources */,
+				6441A66A1808522600A66B2D /* MasterViewController.m in Sources */,
+				6441A660180851E600A66B2D /* Location.m in Sources */,
+				6441A65C180851E500A66B2D /* Venue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
