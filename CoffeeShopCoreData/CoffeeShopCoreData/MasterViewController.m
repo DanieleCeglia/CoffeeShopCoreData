@@ -13,6 +13,7 @@
 #import "Location.h" // con core data serve!
 #import "Stats.h" // con core data serve!
 #import "AppDelegate.h"
+#import <RestKit/CoreData.h>
 
 #define kCLIENTID "GGHC2ZDRME511ZY4NEUK4CN5IKIYE3K55YTX2OWW5HDSMIIZ"
 #define kCLIENTSECRET "YO3G2Q0DZEYHWMSXUW41UBYV3TUIHZMW54CN0G2MQI34TZD1"
@@ -24,6 +25,8 @@
  
  E CODICE GIÀ MEZZO CONVERTITO DA QUALCUNO SU INTERNET: http://madeveloper.blogspot.it/2013/01/ios-restkit-tutorial-code-for-version.html
  (che però è già deprecato su alcuni metodi...)
+ 
+ CORE DATA: https://github.com/RestKit/RestKit/wiki/Object-Mapping
 */
 
 @interface MasterViewController ()
@@ -57,11 +60,24 @@
     
     
     
+    /* CORE DATA */
+    
+    NSURL *modelURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"CoffeeShopCoreData" ofType:@"momd"]];
+    NSManagedObjectModel *managedObjectModel = [[[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL] mutableCopy];
+    RKManagedObjectStore *managedObjectStore = [[RKManagedObjectStore alloc] initWithManagedObjectModel:managedObjectModel];
+    objectManager.managedObjectStore = managedObjectStore;
+    
+    
+    
     /* MAPPATURA JSON CON GLI OGGETTI DEL MODELLO */
     
-    RKObjectMapping *locationMapping = [RKObjectMapping mappingForClass:[Location class]];
-    RKObjectMapping *statsMapping = [RKObjectMapping mappingForClass:[Stats class]];
-    RKObjectMapping *venueMapping = [RKObjectMapping mappingForClass:[Venue class]];
+    //RKObjectMapping *locationMapping = [RKObjectMapping mappingForClass:[Location class]];
+    //RKObjectMapping *statsMapping = [RKObjectMapping mappingForClass:[Stats class]];
+    //RKObjectMapping *venueMapping = [RKObjectMapping mappingForClass:[Venue class]];
+    
+    RKEntityMapping *locationMapping = [RKEntityMapping mappingForEntityForName:@"Location" inManagedObjectStore:managedObjectStore];
+    RKEntityMapping *statsMapping = [RKEntityMapping mappingForEntityForName:@"Stats" inManagedObjectStore:managedObjectStore];
+    RKEntityMapping *venueMapping = [RKEntityMapping mappingForEntityForName:@"Venue" inManagedObjectStore:managedObjectStore];
     
     
     /*** mappatura location ***/
@@ -125,8 +141,8 @@
     
     cell.nameLabel.text = [venue.name length] > 25 ? [venue.name substringToIndex:25] : venue.name;
     
-    cell.distanceLabel.text = [NSString stringWithFormat:@"%.0fm", [venue.location.distance floatValue]];
-    cell.checkinsLabel.text = [NSString stringWithFormat:@"%d checkins", [venue.stats.checkins intValue]];
+    //cell.distanceLabel.text = [NSString stringWithFormat:@"%.0fm", [venue.location.distance floatValue]];
+    //cell.checkinsLabel.text = [NSString stringWithFormat:@"%d checkins", [venue.stats.checkins intValue]];
     
     return cell;
 }
@@ -166,8 +182,8 @@
                                         for (Venue *item in result)
                                         {
                                             NSLog(@"name: %@", item.name);
-                                            NSLog(@"distance: %@", item.location.distance);
-                                            NSLog(@"checkins: %@", item.stats.checkins);
+                                            //NSLog(@"distance: %@", item.location.distance);
+                                            //NSLog(@"checkins: %@", item.stats.checkins);
                                         }
                                         
                                         [self.tableView reloadData];

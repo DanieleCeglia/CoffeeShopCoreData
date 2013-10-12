@@ -648,6 +648,7 @@
 				6441A6361808430F00A66B2D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6441A6371808430F00A66B2D /* Build configuration list for PBXNativeTarget "CoffeeShopCoreDataTests" */ = {
 			isa = XCConfigurationList;
@@ -656,6 +657,7 @@
 				6441A6391808430F00A66B2D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
